@@ -3,7 +3,7 @@ title: "Laravel Breezeを一瞬で日本語化するパッケージ"
 emoji: "📦"
 type: "tech" # tech: 技術記事
 topics: ['Laravel','php']
-published: false
+published: true
 ---
 # Laravel Breezeを手軽に日本語化出来るパッケージを作ったよ
 ## これは何？
