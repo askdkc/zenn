@@ -12,7 +12,7 @@ Laravelの認証機能用パッケージ：Breezeは基本メニューとか表�
 ## 何が凄いの？
 ものの数秒で日本語化できます💪
 
-<img src="https://user-images.githubusercontent.com/7894265/198011737-c40cedc8-9f5d-4517-8407-93b2844bbeb2.gif" width="600">
+![](https://storage.googleapis.com/zenn-user-upload/87b1bb61b90f-20221028.gif)
 
 ## 使い方は？
 Laravel Breezeをインストール済みの環境で以下の2コマンドを実行
