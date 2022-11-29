@@ -10,8 +10,8 @@ Laravelでアプリを開発中にLaravelからメール通知を送信する場
 そんな時に、メールがユーザにどのように見えるのかをお手軽にテストするのに便利なサービスを2つ紹介します✨
 
 ## テーブル オブ コンテンツ(目次)
-- [mailhogを使うやり方](#mailhogを使うやり方)
-- [mailtrapを使うやり方](#mailtrapを使うやり方)
+- [mailhogを使うやり方🐷](#mailhogを使うやり方)
+- [mailtrapを使うやり方🪤](#mailtrapを使うやり方)
 
 ## mailhogを使うやり方
 一つ目はmailhogを使うやり方です
