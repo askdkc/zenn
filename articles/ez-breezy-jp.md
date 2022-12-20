@@ -24,10 +24,10 @@ composer require askdkc/breezejp --dev
 php artisan breezejp
 ```
 
-> **注意：言語設定しておいてね**
+> **言語設定も自動化**
 > 
-> このパッケージインストール前でも後でも良いのですが
-> Laravelの設定ファイル`/config/app.php`で日本語を選択するのをお忘れなく
+> このパッケージインストールするとLaravelの設定ファイル
+> `/config/app.php`のロケールを下記のように自動で日本語化します👍
 
 ```vim
 ---before---
