@@ -25,6 +25,7 @@ Filamentを使うことでLaravelのモデルデータをお手軽に編集可�
 # Filament：一通りの使い方ガイド
 
 ## 新規のLaravelプロジェクト作成
+ここでは `filabel` というプロジェクト名でやっていきます
 ```sh
 % laravel new filavel
 % cd filavel
