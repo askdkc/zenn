@@ -2,20 +2,25 @@
 title: "爆速CRUD管理画面作成パッケージ：Filamentの使い方"
 emoji: "🚀"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ['laravel','filament','TALL']
-published: false
+topics: ['laravel','filament','TALL','php','livewire','alpinejs']
+published: true
 ---
 # Filamentの使い方
 
-## 各項目（初めての人は一通りの使い方ガイドを読んでね）
-- [一通りの使い方ガイド](#filament一通りの使い方ガイド)
-- [リソース管理画面の自動生成方法](sub/easiest-way.md)
-- [データ追加編集時のリダイレクトについて](sub/redirect.md)
-- [メニューのカスタムラベル](sub/change-model-name.md)
-- [ソート機能追加方法](sub/add-sort.md)
-- [検索機能追加方法](sub/add-search.md)
-- [Userモデルのリソースページ作成方法](sub/user-resource-sample.md)
-- [カスタムページの追加方法と応用例](sub/add-custom-page.md)
+## Filament is 何？
+FilamentはLaravel, Livewire, Alpine.js, Tailwindcssを使ったTALLスタックと呼ばれる構成で作られたLaravel用CRUD機能作成パッケージです
+
+Filamentを使うことでLaravelのモデルデータをお手軽に編集可能な画面をサクサク作れてしまいます
+
+## 各機能別ページ（初めての人は、この一通りの使い方ガイドを読んでね）
+- [一通りの使い方ガイド(このガイド)](#filament一通りの使い方ガイド)
+- [リソース管理画面の自動生成方法](https://github.com/askdkc/filamentphp_howto/blob/main/sub/easiest-way.md)
+- [データ追加編集時のリダイレクトについて](https://github.com/askdkc/filamentphp_howto/blob/main/sub/redirect.md)
+- [メニューのカスタムラベル](https://github.com/askdkc/filamentphp_howto/blob/main/sub/change-model-name.md)
+- [ソート機能追加方法](https://github.com/askdkc/filamentphp_howto/blob/main/sub/add-sort.md)
+- [検索機能追加方法](https://github.com/askdkc/filamentphp_howto/blob/main/sub/add-search.md)
+- [Userモデルのリソースページ作成方法](https://github.com/askdkc/filamentphp_howto/blob/main/sub/user-resource-sample.md)
+- [カスタムページの追加方法と応用例](https://github.com/askdkc/filamentphp_howto/blob/main/sub/add-custom-page.md)
 
 # Filament：一通りの使い方ガイド
 
@@ -210,7 +215,7 @@ Success! admin@localhost may now log in at http://filavel.test/admin/login.
 Filamentの管理画面でモデルのデータが扱えるようにリソースを作成します。
 
 > **ちなみに**  
-> 基本を飛ばして自動生成機能で楽したい人は[こちらをご確認ください](/sub/easiest-way.md)
+> 基本を飛ばして自動生成機能で楽したい人は[こちらをご確認ください](https://github.com/askdkc/filamentphp_howto/blob/main/sub/easiest-way.md)
 
 リソース作成の基本を見たい人は、このまま👇の手順を進めてください
 
@@ -362,13 +367,13 @@ Postsリソースの右側の”New Post”をクリックして新規データ�
 タイトルと本文を入力して”Create”をクリック
 ![9CFE0CF3-5736-45EF-9168-8BCBE4BA4EB5](https://user-images.githubusercontent.com/7894265/189489470-06531dde-4942-4a33-9baa-56711229a71e.png)
 
-右上に”Created”と表示されたら作成成功（保存時に一覧画面に戻りたい場合は[こちら](/sub/redirect.md)）。左側のメニューのPostsをクリックして作成されたデータを見てみよう
+右上に”Created”と表示されたら作成成功（保存時に一覧画面に戻りたい場合は[こちら](https://github.com/askdkc/filamentphp_howto/blob/main/sub/redirect.md)）。左側のメニューのPostsをクリックして作成されたデータを見てみよう
 ![435AB861-0F33-4E78-AA68-13579A31524F](https://user-images.githubusercontent.com/7894265/189489480-55146922-1930-4e14-b528-9ea60db95f3b.png)
 
-作成したデータが一覧に表示される（項目でソートしたい場合は[こちら](sub/add-sort.md)）
+作成したデータが一覧に表示される（項目でソートしたい場合は[こちら](https://github.com/askdkc/filamentphp_howto/blob/main/sub/add-sort.md)）
 ![800B4CDA-56A0-4190-9E08-DAE863783CA7](https://user-images.githubusercontent.com/7894265/189489502-f62acb32-6d0c-46d7-b8de-e835bcd2ec95.png)
 
-ちなみにここでモデル名の箇所をLaravelのモデル名じゃなく、日本語で適切な名前を表示したい場合には[こちら](/sub/change-model-name.md)を参照
+ちなみにここでモデル名の箇所をLaravelのモデル名じゃなく、日本語で適切な名前を表示したい場合には[こちら](https://github.com/askdkc/filamentphp_howto/blob/main/sub/change-model-name.md)を参照
 
 
 ## Filamentメニューの日本語化
@@ -384,7 +389,7 @@ config/app.php
 -----------
 ```
 
-再度管理画面にアクセスするとメニューが日本語に変わっています。ちなみに項目の検索機能をつけたい方は 👉[こちら](sub/add-search.md)
+再度管理画面にアクセスするとメニューが日本語に変わっています。ちなみに項目の検索機能をつけたい方は 👉[こちら](https://github.com/askdkc/filamentphp_howto/blob/main/sub/add-search.md)
 ![6F7D2D95-F8BC-497E-A346-B53B76E303C2](https://user-images.githubusercontent.com/7894265/189489522-f4346846-d3aa-43f2-88a6-06a52b793003.png)
 
 作成ボタンをクリック後も各種ボタンやラベルが日本語表記になります
@@ -481,7 +486,7 @@ Postデータから編集をクリックし、表示された編集画面のTag�
 
 ## リレーションシップの付け替えについて
 ちなみにこの画面の削除ボタンをクリックするとリレーションシップが外れるのではなく、sampleタグ自体が削除されてしまいます😱
-<img width="1020" alt="スクリーンショット 2022-09-12 15 41 23" src="https://user-images.githubusercontent.com/7894265/189590935-836cafa2-79e6-4f6a-88f4-323503b69412.png">
+![4D1AD9C1-A8BA-4661-B518-D6B5D14636DE](https://user-images.githubusercontent.com/7894265/189590935-836cafa2-79e6-4f6a-88f4-323503b69412.png)
 
 
 これを防ぐには TagsRelationManager.php を以下のように変更します
@@ -539,20 +544,19 @@ public static function table(Table $table): Table
 
 これで一安心😄
 
-<img width="1020" alt="スクリーンショット 2022-09-12 15 45 18" src="https://user-images.githubusercontent.com/7894265/189591027-5d71cf14-d680-4557-a6b8-7995555a1c42.png">
+![4D1AD9C1-A8BA-4661-B518-D6B5D14636DD](https://user-images.githubusercontent.com/7894265/189591027-5d71cf14-d680-4557-a6b8-7995555a1c42.png)
 
 
 ## Userモデルの管理画面
 
-ユーザモデルは新規登録時のメールアドレスのユニーク制限やパスワードのハッシュ化等、色々と考えるべきことが多いので、[こちらの別枠ドキュメント](/sub/user-resource-sample.md)を参考願います
+ユーザモデルは新規登録時のメールアドレスのユニーク制限やパスワードのハッシュ化等、色々と考えるべきことが多いので、[こちらの別枠ドキュメント](https://github.com/askdkc/filamentphp_howto/blob/main/sub/user-resource-sample.md)を参考願います
 
 ## カスタムページの追加
 
-Filamentではリソースコンポーネントだけではなく、個別のカスタムページを作成して追加することも出来ます。詳しくは[こちらをご覧ください](/sub/add-custom-page.md)
+Filamentではリソースコンポーネントだけではなく、個別のカスタムページを作成して追加することも出来ます。詳しくは[こちらをご覧ください](https://github.com/askdkc/filamentphp_howto/blob/main/sub/add-custom-page.md)
 
 ## 追加情報
 より詳しい情報はオフィシャルドキュメントを読もう👉 
 [Installation - Admin Panel - Filament](https://filamentphp.com/docs)
 
-
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=askdkc.filament-howto.visitor-badge)
+[元ネタはこちら](https://github.com/askdkc/filamentphp_howto)
