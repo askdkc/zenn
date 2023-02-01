@@ -51,13 +51,13 @@ DB_CONNECTION=sqlite
 
 ## Filamentのインストール
 ```sh
-% composer require filament/filament:"^2.0"
+composer require filament/filament:"^2.0"
 ```
 
 ## サンプルモデル作成
 ```sh
-% php artisan make:model -m Post
-% php artisan make:model -m Tag
+php artisan make:model -m Post
+php artisan make:model -m Tag
 ```
 
 ### モデルのマイグレーション作成
@@ -112,7 +112,7 @@ public function up()
 ```
 
 ## モデルリレーションシップテーブル作成
-```sh
+```bash
 php artisan make:migration create_post_tag_table
 ```
 
@@ -147,8 +147,8 @@ public function up()
 
 
 ## マイグレーション実行
-```sh
-% php artisan migrate
+```bash
+php artisan migrate
 ```
 
 ## Postモデルの設定
@@ -183,8 +183,8 @@ class Tag extends Model
 
 
 ## Filament用管理ユーザ作成
-```sh
-% php artisan make:filament-user
+```bash
+php artisan make:filament-user
 
  Name:
  > admin (管理者ユーザの名前入力)
@@ -202,8 +202,8 @@ Success! admin@localhost may now log in at http://filavel.test/admin/login.
 ```
 
 ## Filamentにログイン
-```sh
-% php artisan serve
+```bash
+php artisan serve
 ```
 
 ブラウザで http://localhost:8000/admin/login にアクセスする
@@ -220,9 +220,9 @@ Filamentの管理画面でモデルのデータが扱えるようにリソース
 
 リソース作成の基本を見たい人は、このまま👇の手順を進めてください
 
-```sh
-% php artisan make:filament-resource Post
-% php artisan make:filament-resource Tag
+```bash
+php artisan make:filament-resource Post
+php artisan make:filament-resource Tag
 ```
 
 PostResource.phpファイルを編集します
@@ -399,8 +399,8 @@ config/app.php
 >**ちなみに自分の方でFilamentのリリース[v2.15.29の#3716、#3717、#3718](https://github.com/filamentphp/filament/releases/tag/v2.15.29)のPRとリリース[v2.16.13の#4152、#4153、#4154](https://github.com/filamentphp/filament/releases/tag/v2.16.13)のPR、リリース[v2.16.17の#4202、#4203](https://github.com/filamentphp/filament/releases/tag/v2.16.17)、リリース[v2.16.19の#4294](https://github.com/filamentphp/filament/releases/tag/v2.16.19)で日本語化に貢献してます😏**
 
 ## Filamentリレーションリソースの追加
-```sh
-% php artisan make:filament-relation-manager PostResource tags name
+```bash
+php artisan make:filament-relation-manager PostResource tags name
 ```
 
 ### PostモデルからTagの新規作成＆割当を可能にするボタン追加
