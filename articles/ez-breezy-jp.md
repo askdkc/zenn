@@ -17,7 +17,13 @@ Laravelの認証機能用パッケージ：Breezeはとても便利なのです�
 ![](https://storage.googleapis.com/zenn-user-upload/87b1bb61b90f-20221028.gif)
 
 ## 使い方は？
-Laravel Breezeをインストール済みの環境で以下の2コマンドを実行
+Laravel Breezeのbladeテンプレートをインストールします
+```bash
+composer require laravel/breeze --dev
+php artisan breeze:install blade
+```
+
+その後、以下の2コマンドを実行し、この日本語化パッケージを導入
 
 ```bash
 composer require askdkc/breezejp --dev
