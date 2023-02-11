@@ -38,10 +38,14 @@ php artisan breezejp
 ```vim
 ---before---
 'locale' => 'en',
+
+'faker_locale' => 'en_US',
 ------------
 ↓
 ---after---
 'locale' => 'ja',
+
+'faker_locale' => 'ja_JP',
 -----------
 ```
 
