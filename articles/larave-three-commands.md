@@ -3,7 +3,7 @@ title: "Laravelを3コマンドで他言語化対応🇺🇸🇯🇵"
 emoji: "🌎"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['laravel','php','language','localization']
-published: false
+published: true
 ---
 # Laravelを3コマンドで他言語化対応
 
