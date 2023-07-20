@@ -59,7 +59,7 @@ composer global require laravel/valet
 ```
 
 
-### Laravel valetの初期設定
+### Laravel Valetの初期設定
 
 Macは自分のホームディレクトリに`Sites`というディレクトリを作ると便利です（昔のMacはWEBサーバが入ってて、ここに公開用HTMLを入れておりました）
 
