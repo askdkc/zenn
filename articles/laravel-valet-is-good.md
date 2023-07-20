@@ -19,7 +19,56 @@ brewのオフィシャルページに書かれている方法で初期セット�
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+### 必要なパッケージ入れて行きます
+
+```bash
+brew update
+brew install php
+brew install composer
+```
+
 #### 環境変数整えます
 
 vi ~/.zshrc
 
+末尾に下記を入れておきます
+
+```vim
+export PATH=$PATH:$HOME/.composer/vendor/bin
+```
+
+### Laravel Installerのインストール
+
+```bash
+composer global require laravel/installer
+```
+
+### Laravel Valetのインストール
+
+```bash
+composer global require laravel/valet
+```
+
+
+### Laravel valetの初期設定
+
+Macは自分のホームディレクトリに`Sites`というディレクトリを作ると便利です（昔のMacはWEBサーバが入ってて、ここに公開用HTMLを入れておりました）
+
+```bash
+mkdir ~/Sites
+cd ~/Sites
+valet park
+```
+
+### Laravelの動作確認
+
+```bash
+mkdir ~/Sites
+laravel new mynewlaravel
+```
+
+ブラウザを開いて
+
+http://mynewlaravel.test
+
+にアクセスすると、はい！もうLaravel動いてます！
