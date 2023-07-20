@@ -22,7 +22,9 @@ Laravelでアプリを開発する方法は色々ありますが、やっぱりM
 
 brewのオフィシャルページに書かれている方法で初期セットアップしましょう
 
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 ### 必要なパッケージ入れて行きます
 
