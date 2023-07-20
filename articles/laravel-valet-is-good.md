@@ -80,7 +80,8 @@ laravel new mynewlaravel
 
 http://mynewlaravel.test
 
-にアクセスすると、、、はい！もうLaravel動いてます！
+にアクセスすると、、、<br>
+はい！もうLaravel動いてます！
 
 ### 面倒なステップを1ステップに
 
