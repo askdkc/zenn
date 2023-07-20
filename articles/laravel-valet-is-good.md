@@ -3,13 +3,18 @@ title: "Laravel開発ならValet一択"
 emoji: "😏"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['laravel','php','valet']
-published: false
+published: true
 ---
 # Laravel開発ならValet一択
 
 Laravelでアプリを開発する方法は色々ありますが、やっぱりMac使ってて一番興奮する開発方法はValetですね
 
 間違いないね
+
+## Macじゃない人
+
+ご安心ください☺️
+[こちらで解決可能](https://apple.com/jp)です☺️
 
 ## セットアップ
 
@@ -55,7 +60,7 @@ composer global require laravel/valet
 Macは自分のホームディレクトリに`Sites`というディレクトリを作ると便利です（昔のMacはWEBサーバが入ってて、ここに公開用HTMLを入れておりました）
 
 ```bash
-mkdir ~/Sites
+mkdir -p ~/Sites
 cd ~/Sites
 valet park
 ```
@@ -71,4 +76,10 @@ laravel new mynewlaravel
 
 http://mynewlaravel.test
 
-にアクセスすると、はい！もうLaravel動いてます！
+にアクセスすると、、、はい！もうLaravel動いてます！
+
+### 面倒なステップを1ステップに
+
+最新のLaraconで発表されたLaravel Herdを使いましょう
+
+https://herd.laravel.com/
