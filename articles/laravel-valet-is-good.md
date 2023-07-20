@@ -36,7 +36,9 @@ brew install composer
 
 #### 環境変数整えます
 
+```bash
 vi ~/.zshrc
+```
 
 末尾に下記を入れておきます
 
