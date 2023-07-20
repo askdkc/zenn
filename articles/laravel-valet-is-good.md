@@ -20,7 +20,7 @@ published: true
 
 ### brew入れます
 
-brewのオフィシャルページに書かれている方法で初期セットアップしましょう
+[brewのオフィシャルページ](https://brew.sh/)に書かれている方法で初期セットアップしましょう
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
