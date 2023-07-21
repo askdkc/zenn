@@ -66,6 +66,7 @@ Macは自分のホームディレクトリに`Sites`というディレクトリ�
 ```bash
 mkdir -p ~/Sites
 cd ~/Sites
+valet install
 valet park
 ```
 
