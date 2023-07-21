@@ -84,6 +84,34 @@ http://mynewlaravel.test
 にアクセスすると、、、<br>
 はい！もうLaravel動いてます！
 
+#### 何が便利って
+
+「ちょっと開発者さん？たこ焼き屋やってるんだけど、冷凍たこ焼きをネットで売りたいんだ」
+
+『それならLaravelでStripe使ってちゃっちゃと作りますか！』
+
+```bash
+cd ~/Sites
+laravel new takoyakikun
+```
+
+ブラウザを開いて
+
+http://takoyakikun.test
+
+にアクセスすると、、、<br>
+はい！もうLaravel動いてます！
+
+そのまま
+
+http://mynewlaravel.test
+
+にもアクセス可能です
+
+複数のプロジェクトをなんのコマンドも叩かずに切り替え可能🤯
+
+楽〜😍
+
 ### 面倒なステップを1ステップに
 
 最新のLaraconで発表されたLaravel Herdを使いましょう
