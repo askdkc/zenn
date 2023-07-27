@@ -121,3 +121,10 @@ https://herd.laravel.com/
 ## 何かと楽したい人へ
 
 こちらにユーザ認証機能や多言語対応をコマンド数回叩くだけでOKという[記事](https://zenn.dev/circleback/articles/larave-three-commands)があります
+
+
+## 何故かPostgreSQLでエラーになるのだが？と言う人
+
+最近のhomebrewのアップデートでPostgreSQL使用時のvaletでエラーが発生するようになってる感じです
+
+直し方を見つけたのでLaravel Valetの該当Issueに[解決方法を報告](https://github.com/laravel/valet/issues/1433#issuecomment-1653419658)してます
