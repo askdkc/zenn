@@ -114,11 +114,11 @@ http://mynewlaravel.test
 
 ### 面倒なステップを1ステップに
 
-最新のLaraconで発表されたLaravel Herdを使いましょう
+最新のLaraconUSで発表されたLaravel Herdを使いましょう
 
 https://herd.laravel.com/
 
-## 何かと楽したい人へ
+## 冷凍たこ焼きで何かと楽したい人へ
 
 こちらにユーザ認証機能や多言語対応をコマンド数回叩くだけでOKという[記事](https://zenn.dev/circleback/articles/larave-three-commands)があります
 
