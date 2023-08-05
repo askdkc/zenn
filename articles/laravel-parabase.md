@@ -2,7 +2,7 @@
 title: "LaravelからSupabaseでPGroongaを使う"
 emoji: "🐘"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ['laravel','php','postgresql','全文検索','pgroonga']
+topics: ['laravel','php','postgresql','全文検索','pgroonga','supabase']
 published: true
 ---
 
