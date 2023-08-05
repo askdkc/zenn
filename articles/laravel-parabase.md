@@ -3,14 +3,14 @@ title: "LaravelからSupabaseでPGroongaを使う"
 emoji: "🐘"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['laravel','php','postgresql','全文検索','pgroonga']
-published: false
+published: true
 ---
 
 # SupabaseをLaravelから使う方法
 
-「いや〜、Laravelでアプリを開発する方法は色々ありますが、やっぱり一番興奮するのはマネージドなDBで高速日本語全文検索のPGroonga使えた時ですね！」
+Dさん：「いや〜、Laravelでアプリを開発する方法は色々ありますが、やっぱり一番興奮するのはマネージドなDBで高速日本語全文検索のPGroonga使えた時ですね！」
 
-『間違いないね！』
+Tさん：『間違いないね！』
 
 ## サインアップ
 まずは[supabase](https://supabase.com)にサインアップしてアカウントを作成し、適当に組織を作り、下記のようなダッシュボードにアクセスします
