@@ -35,6 +35,8 @@ DB_PASSWORD=自分のパスワード
 
 ## PGroongaを使っていくぞ！
 
+いく🐘！
+
 ## ExtensionをONにする
 Supabaseは日本語検索に強い`PGroonga`を使える唯一のマネージドなDBなので、使います！
 
