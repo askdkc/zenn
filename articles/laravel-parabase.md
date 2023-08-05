@@ -15,11 +15,11 @@ Tさん：『間違いないね！』
 ## サインアップ
 まずは[supabase](https://supabase.com)にサインアップしてアカウントを作成し、適当に組織を作り、下記のようなダッシュボードにアクセスします
 
-下図のように **Project Settings > Database > Database Setting** の箇所にDBに必要な情報が書かれているので、これを使います
+![](https://storage.googleapis.com/zenn-user-upload/d1cc3425a4ae-20230805.png)
+
+上図のように **Project Settings > Database > Database Setting** の箇所にLaravelからDBに接続する際に必要な情報が書かれているので、これを使います
 
 (これはあくまでサンプルなので、既にこのスクリーンショットのプロジェクトは消してあります)
-
-![](https://storage.googleapis.com/zenn-user-upload/d1cc3425a4ae-20230805.png)
 
 ## Laravelの`.env`へのDB設定
 
