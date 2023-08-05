@@ -365,6 +365,20 @@ http://127.0.0.1:8000 へアクセス
 例：ジョバンニ OR カムパネルラ → ジョバンニもしくはカムパネルラが含まれてればヒット！
 
 
+## メニューの日本語化
+
+Breeejpによって殆どは日本語化されてるのですが、検索画面用の値が無いので、下記を`lang/ja.json`に追加します
+
+```json
+(どこかの中間に入れてください)
+
+    "Title": "タイトル",
+    "Body": "本文",
+    "Search": "検索",
+    "Enter search keyword": "検索キーワードを入力",
+
+```
+
 ## PGroongaの動作確認(インデックス利用)
 ![](https://storage.googleapis.com/zenn-user-upload/5a1b09fff0a3-20230805.png)
 
