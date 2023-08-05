@@ -387,7 +387,10 @@ Breeezejpによって殆どは日本語化されてるのですが、検索画�
 
 http://127.0.0.1:8000/register
 
+![](https://storage.googleapis.com/zenn-user-upload/d3d4ebe35a84-20230805.png)
+
 あら便利💕
+(`guest.blade.php`をいじったので、ちょっとカードスタイルが幅広🥲)
 
 ## PGroongaの動作確認(インデックス利用)
 ![](https://storage.googleapis.com/zenn-user-upload/5a1b09fff0a3-20230805.png)
