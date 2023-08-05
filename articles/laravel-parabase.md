@@ -62,7 +62,7 @@ composer require askdkc/breezejp --dev
 php artisan breeze:install blade
 php artisan breezejp
 ```
-これでLaravel Breezeと日本語化が完了しました👍🇯🇵(Breezejpは便利なのでGithubのレポにスターしてあげましょう💝)
+これでLaravel Breezeと日本語化が完了しました👍🇯🇵(Breezejpは便利なのでGithubのリポジトリにスターしてあげましょう💝)
 
 ### migrationとfactoryの作成
 
