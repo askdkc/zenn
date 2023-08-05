@@ -19,7 +19,7 @@ published: false
 
 (これはあくまでサンプルなので、既にこのスクリーンショットのプロジェクトは消してあります)
 
-<img width="1422" alt="image" src="https://github.com/askdkc/supa-laravel/assets/7894265/93650fab-da39-4512-975b-dee71a17b5b0">
+![](https://storage.googleapis.com/zenn-user-upload/d1cc3425a4ae-20230805.png)
 
 ## Laravelの`.env`へのDB設定
 
@@ -40,13 +40,13 @@ Supabaseは日本語検索に強い`PGroonga`を使える唯一のマネージ�
 
 左側の**Database**の**Extension**を開いて検索フィールドに`PGroonga`と入れると出てきます（左側のPGroongaを選択してね）
 
-<img width="1419" alt="image" src="https://github.com/askdkc/supa-laravel/assets/7894265/9938e224-d403-4b81-98fa-0fda1ce1b589">
+![](https://storage.googleapis.com/zenn-user-upload/a36191a5355d-20230805.png)
 
 ## Schemaはpublicを選択
 
 データテーブルは基本`public`スキーマに作られるので、`public`にExtensionをONにしておきます
 
-<img width="1419" alt="image" src="https://github.com/askdkc/supa-laravel/assets/7894265/1e35ac08-b290-4534-8304-7d235f797323">
+![](https://storage.googleapis.com/zenn-user-upload/6d07bcea2ac4-20230805.png)
 
 ## Laravel側でテーブル作成やダミーデータ作成
 
@@ -115,7 +115,7 @@ php artisan migrate --seed
 
 なお、途中経過はSupabaseダッシュボードの**Table editor > posts**から確認可能です
 
-<img width="1402" alt="image" src="https://github.com/askdkc/supa-laravel/assets/7894265/93bc3b75-e57c-4ace-bc7e-1b097eb6c2e4">
+![](https://storage.googleapis.com/zenn-user-upload/611c4d1cc746-20230805.png)
 
 ## PGroonga用のインデックス作成（重要）
 `PGroonga`を使う上での最重要項目：インデックスを作成します
@@ -126,7 +126,7 @@ php artisan migrate --seed
 CREATE INDEX pg_title_index ON posts USING pgroonga (title);
 CREATE INDEX pg_body_index ON posts USING pgroonga (body);
 ```
-<img width="1419" alt="image" src="https://github.com/askdkc/supa-laravel/assets/7894265/e7a0e86a-a914-481f-8166-a1c45dac9c78">
+![](https://storage.googleapis.com/zenn-user-upload/74885b42e22f-20230805.png)
 
 ## Laravel側で検索してみるぞ🔍
 
@@ -341,12 +341,11 @@ http://127.0.0.1:8000 へアクセス
 
 「カムパネルラ」で検索してみます
 
-<img width="1402" alt="image" src="https://github.com/askdkc/supa-laravel/assets/7894265/3cafbff0-9ff2-4a43-bee8-d32023a8da6d">
+![](https://storage.googleapis.com/zenn-user-upload/69c4901ecd3d-20230805.png)
 
 
 ## PGroongaの動作確認(インデックス利用)
-<img width="1417" alt="image" src="https://github.com/askdkc/supa-laravel/assets/7894265/3ab5b920-32a5-427f-aa38-70556530ce91">
+![](https://storage.googleapis.com/zenn-user-upload/5a1b09fff0a3-20230805.png)
 
 ## ちなみに 10,000件程度でも結構容量食い😅
-<img width="1417" alt="image" src="https://github.com/askdkc/supa-laravel/assets/7894265/7b58f1a0-4bc1-415d-89b3-a72589ac5275">
-
+![](https://storage.googleapis.com/zenn-user-upload/a2a6385bc915-20230805.png)
