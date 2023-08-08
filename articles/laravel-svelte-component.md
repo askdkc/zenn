@@ -147,11 +147,9 @@ module.exports = {
 };
 ```
 
-## Svelteコンポーネント`Hello.svelte`と呼び出し用のjs（`main.js`とします）を作成
+## Svelteコンポーネント`Hello.svelte`と呼び出し用のJS（`main.js`とします）を作成
 Svelte用のコンポーネントとして `/resources/js/Hello.svelte` を作る例(自分のプロジェクトに合わせて適当に変えてね)
-`resources/js`配下
-
-- `main.js`
+- `resources/js/main.js`
 ```main.js
 import App from "./Hello.svelte";
 
@@ -162,7 +160,7 @@ const app = new App({
 export default app;
 ```
 
-- `Hello.svelte`
+- `resources/js/Hello.svelte`
 ```svelte
 <script></script>
 
@@ -170,7 +168,7 @@ export default app;
 ```
 
 ## guest.blade.php or app.blade.phpを使うと便利
-*.blade.phpはテンプレートとして
+テンプレートとしてLaravel Breezeの：
 ```
 <x-guest-layout>
 </x-guest-layout>
