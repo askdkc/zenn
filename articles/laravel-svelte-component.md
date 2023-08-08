@@ -3,7 +3,7 @@ title: "LaravelのBladeにSvelteコンポーネントを埋め込む"
 emoji: "😉"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['Laravel','Svelte','Vite']
-published: false
+published: true
 ---
 # Laravel 10 with ViteでSvelte.svelteを使う下準備
 SvelteコンポーネントをLaravelのbladeから呼び出して使うメモ
@@ -147,11 +147,9 @@ module.exports = {
 };
 ```
 
-## Svelteコンポーネント`Hello.svelte`と呼び出し用のjs（`main.js`とします）を作成
+## Svelteコンポーネント`Hello.svelte`と呼び出し用のJS（`main.js`とします）を作成
 Svelte用のコンポーネントとして `/resources/js/Hello.svelte` を作る例(自分のプロジェクトに合わせて適当に変えてね)
-`resources/js`配下
-
-- `main.js`
+- `resources/js/main.js`
 ```main.js
 import App from "./Hello.svelte";
 
@@ -162,7 +160,7 @@ const app = new App({
 export default app;
 ```
 
-- `Hello.svelte`
+- `resources/js/Hello.svelte`
 ```svelte
 <script></script>
 
@@ -170,7 +168,7 @@ export default app;
 ```
 
 ## guest.blade.php or app.blade.phpを使うと便利
-*.blade.phpはテンプレートとして
+テンプレートとしてLaravel Breezeの：
 ```
 <x-guest-layout>
 </x-guest-layout>
@@ -212,3 +210,4 @@ LARAVEL v10.17.1  plugin v0.7.8
 ```
 
 ## スクリーンショット
+![](https://storage.googleapis.com/zenn-user-upload/a7ba4f5b3a1d-20230808.png)
