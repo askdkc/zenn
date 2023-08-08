@@ -3,7 +3,7 @@ title: "LaravelのBladeにSvelteコンポーネントを埋め込む"
 emoji: "😉"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['Laravel','Svelte','Vite']
-published: false
+published: true
 ---
 # Laravel 10 with ViteでSvelte.svelteを使う下準備
 SvelteコンポーネントをLaravelのbladeから呼び出して使うメモ
