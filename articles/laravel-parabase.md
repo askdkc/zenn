@@ -397,3 +397,9 @@ http://127.0.0.1:8000/register
 
 ## ちなみに 10,000件程度でも結構容量食い😅
 ![](https://storage.googleapis.com/zenn-user-upload/a2a6385bc915-20230805.png)
+
+## この記事が役に立ったと思ったらサポートしてね💕
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X7X8O7KCU)
+
+ [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/askdkc)
