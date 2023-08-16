@@ -115,6 +115,10 @@ php artisan migrate --seed
 
 10,000件のダミーデータを**Supabase**側に作るのには10分程度かかるのでコーヒーでも飲んで待ちます☕️
 
+むしろ自分にコーヒー買ってください💕
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X7X8O7KCU)
+
 なお、途中経過はSupabaseダッシュボードの**Table editor > posts**から確認可能です
 
 ![](https://storage.googleapis.com/zenn-user-upload/611c4d1cc746-20230805.png)
