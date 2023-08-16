@@ -11,6 +11,12 @@ Laravelの認証機能用パッケージ：Breezeはとても便利なのです�
 
 このパッケージを使うと一瞬で日本語になって便利です👍
 
+もし使ってみて気に入ったらサポートしてね💕
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X7X8O7KCU)
+
+ [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/askdkc)
+
 ## 何が凄いの？
 こんな感じで、ものの数秒で日本語化できます💪
 
