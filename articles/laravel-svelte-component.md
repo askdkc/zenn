@@ -211,3 +211,9 @@ LARAVEL v10.17.1  plugin v0.7.8
 
 ## スクリーンショット
 ![](https://storage.googleapis.com/zenn-user-upload/a7ba4f5b3a1d-20230808.png)
+
+## この記事が役に立ったらサポートしてね💕
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X7X8O7KCU)
+
+ [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/askdkc)
