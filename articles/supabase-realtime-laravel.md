@@ -169,3 +169,9 @@ http://127.0.0.1:8000 にアクセス
 ### 動作GIF
 
 ![](https://storage.googleapis.com/zenn-user-upload/34960a3242a4-20230809.gif)
+
+## この記事が気に入ったらサポートしてね💕
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X7X8O7KCU)
+
+[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/askdkc)

@@ -561,3 +561,9 @@ Filamentではリソースコンポーネントだけではなく、個別のカ
 [Installation - Admin Panel - Filament](https://filamentphp.com/docs)
 
 [元ネタはこちら](https://github.com/askdkc/filamentphp_howto)
+
+## この記事が気に入ったらサポートしてね💕
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X7X8O7KCU)
+
+[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/askdkc)

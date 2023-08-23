@@ -128,3 +128,9 @@ https://herd.laravel.com/
 最近のhomebrewのアップデートでPostgreSQL使用時のvaletでエラーが発生するようになってる感じです
 
 直し方を見つけたのでLaravel Valetの該当Issueに[解決方法を報告](https://github.com/laravel/valet/issues/1433#issuecomment-1653419658)してます
+
+## この記事が気に入ったらサポートしてね💕
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X7X8O7KCU)
+
+ [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/askdkc)
