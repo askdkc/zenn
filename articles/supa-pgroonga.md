@@ -3,7 +3,7 @@ title: "SupabaseでPGroongaを使う"
 emoji: "🐘"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['supabase','pgroonga','svelte','postgresql']
-published: false
+published: true
 ---
 
 # SupabaseでPGroongaを使ってみよう
