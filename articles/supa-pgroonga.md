@@ -262,3 +262,8 @@ http://localhost:5173 へブラウザでアクセス
 
 ![](https://storage.googleapis.com/zenn-user-upload/2f7da0f593fd-20230823.png)
 
+## この記事が気に入ったらサポートしてね💕
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X7X8O7KCU)
+
+ [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/askdkc)
