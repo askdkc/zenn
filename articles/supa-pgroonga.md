@@ -34,6 +34,8 @@ PGroongaのオフィシャルドキュメントのハウツー内に[「PostgRES
 
 ![](https://storage.googleapis.com/zenn-user-upload/f3df96618ea6-20230823.png)
 
+#### SQLの中身
+
 ```sql
 CREATE TABLE memos (
   id integer,
@@ -51,6 +53,8 @@ INSERT INTO memos VALUES (4, 'groongaコマンドがあります。','今日は�
 ### サンプルデータへの検索用`PGroonga`インデックス作成
 
 ![](https://storage.googleapis.com/zenn-user-upload/e98f47c512b6-20230823.png)
+
+#### SQLの中身
 
 ```sql
 CREATE INDEX pgroonga_title_search_index ON memos USING pgroonga (title) 
@@ -87,6 +91,8 @@ CREATE INDEX pgroonga_content_search_index ON memos USING pgroonga (content)
 
 ![](https://storage.googleapis.com/zenn-user-upload/3e09c93284eb-20230823.png)
 
+#### SQLの中身
+
 ```sql
 -- Title検索用
 CREATE FUNCTION find_title(keywords text) RETURNS SETOF memos AS $$
@@ -109,6 +115,8 @@ $$ LANGUAGE plpgsql;
 作成した`memos`テーブルに読み取り専用のアクセス権限を設定します
 
 ![](https://storage.googleapis.com/zenn-user-upload/57a2fa26c120-20230823.png)
+
+#### SQLの中身
 
 ```sql
 -- 1. Enable RLS
