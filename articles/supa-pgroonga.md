@@ -14,7 +14,7 @@ Supabaseで日本語のいい感じな全文検索拡張機能である`PGroonga
 
 まずは[supabase](https://supabase.com)にサインアップしてアカウントを作成し、適当に組織を作り、下記のようなダッシュボードにアクセスしDBを作ります
 
-<img width="1418" alt="create-new-project" src="https://github.com/askdkc/askdkc.github.io/assets/7894265/e3ff10ad-047c-4774-9033-1ce03c9edee1">
+![](https://storage.googleapis.com/zenn-user-upload/69c2877d294f-20230823.png)
 
 
 ## ExtensionをONにする
@@ -23,7 +23,7 @@ Supabaseは日本語検索に強いPGroongaを使えるので、こいつをON�
 
 左側のDatabaseのExtensionを開いて検索フィールドにPGroongaと入れると出てきます（左側のPGroongaを選択してね）
 
-![pgronnnga-extension](https://github.com/askdkc/askdkc.github.io/assets/7894265/9beb3c6a-bb05-44e1-9883-1aaf9208fb73)
+![](https://storage.googleapis.com/zenn-user-upload/af94e50962ff-20230823.png)
 
 
 ## サンプルデータの作成
@@ -32,7 +32,7 @@ PGroongaのオフィシャルドキュメントのハウツー内に[「PostgRES
 
 ### サンプルデータ
 
-<img width="1418" alt="table-creation" src="https://github.com/askdkc/askdkc.github.io/assets/7894265/ae9ab209-0eee-4817-805d-942c88b5df24">
+![](https://storage.googleapis.com/zenn-user-upload/f3df96618ea6-20230823.png)
 
 ```sql
 CREATE TABLE memos (
@@ -50,7 +50,7 @@ INSERT INTO memos VALUES (4, 'groongaコマンドがあります。','今日は�
 
 ### サンプルデータへの検索用`PGroonga`インデックス作成
 
-<img width="1418" alt="create-indexes" src="https://github.com/askdkc/askdkc.github.io/assets/7894265/44377810-dc0a-4407-b659-5357f8e61510">
+![](https://storage.googleapis.com/zenn-user-upload/e98f47c512b6-20230823.png)
 
 ```sql
 CREATE INDEX pgroonga_title_search_index ON memos USING pgroonga (title) 
@@ -85,7 +85,7 @@ CREATE INDEX pgroonga_content_search_index ON memos USING pgroonga (content)
 
 ## `PGroonga`検索用ストアドファンクション作成
 
-<img width="1418" alt="create-function" src="https://github.com/askdkc/askdkc.github.io/assets/7894265/db6bfeca-b581-45ee-aefc-930b29d5bec5">
+![](https://storage.googleapis.com/zenn-user-upload/3e09c93284eb-20230823.png)
 
 ```sql
 -- Title検索用
@@ -108,7 +108,7 @@ $$ LANGUAGE plpgsql;
 
 作成した`memos`テーブルに読み取り専用のアクセス権限を設定します
 
-<img width="1418" alt="create-policy" src="https://github.com/askdkc/askdkc.github.io/assets/7894265/89403b68-a349-47a6-b86f-a24b75f2e706">
+![](https://storage.googleapis.com/zenn-user-upload/57a2fa26c120-20230823.png)
 
 ```sql
 -- 1. Enable RLS
@@ -151,7 +151,7 @@ vi .env
 
 Supabaseの `Project Settings > API` から`SUPABASE_URL`と`SUPABASE_ANON_KEY`をゲットします
 
-<img width="1418" alt="env-keys" src="https://github.com/askdkc/askdkc.github.io/assets/7894265/9381aee1-ec04-4115-906d-18cf73d173d9">
+![](https://storage.googleapis.com/zenn-user-upload/39ba7725cbeb-20230823.png)
 
 #### `.env`の中身に記載
 
@@ -248,9 +248,9 @@ npm run dev
 
 http://localhost:5173 へブラウザでアクセス
 
-<img width="1418" alt="image" src="https://github.com/askdkc/askdkc.github.io/assets/7894265/e137aef2-9335-40b2-85e3-1e816842fe95">
+![](https://storage.googleapis.com/zenn-user-upload/7695296d22b0-20230823.png)
 
 検索すると検索結果が下に表示されます(ローマ字で入力しても検索可能！)
 
-<img width="1418" alt="image" src="https://github.com/askdkc/askdkc.github.io/assets/7894265/7a8bccb9-57bb-4bc0-8246-f62f834a7053">
+![](https://storage.googleapis.com/zenn-user-upload/2f7da0f593fd-20230823.png)
 
