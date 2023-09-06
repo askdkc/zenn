@@ -9,3 +9,4 @@ published: false
 ## ReactがSvelteよりも優れている点
 ありません
 
+**Happy Hacking😉**
