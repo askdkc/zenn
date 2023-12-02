@@ -29,6 +29,7 @@ cd ~/Sites
 
 laravel new myproj
 ```
+最近のLaravel Installerはウィザード形式で色々聞いてきますが、基本は全部デフォルトでEnterで大丈夫です
 
 4. プロジェクト名.testなURLにアクセスします
 
@@ -36,4 +37,5 @@ http://myproj.test/
 
 ハイ便利〜！！
 
+![](https://storage.googleapis.com/zenn-user-upload/a4a5cff9e988-20231202.png)
 
