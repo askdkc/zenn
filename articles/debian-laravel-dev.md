@@ -3,7 +3,7 @@ title: "Debianに一瞬でLaravel開発環境を構築"
 emoji: "🏎️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["linux","laravel","php","debian"]
-published: false
+published: true
 ---
 # Debianに一瞬でLaravel開発環境を構築
 ## これは何？
