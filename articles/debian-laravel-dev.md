@@ -39,3 +39,6 @@ http://myproj.test/
 
 ![](https://storage.googleapis.com/zenn-user-upload/a4a5cff9e988-20231202.png)
 
+## セットアップスクリプトの中身
+
+[こっちのGitHubリポ](https://github.com/askdkc/debian12-laravel-setup)にまとめてあるので、詳しく中身を見たい人はどうぞ〜
