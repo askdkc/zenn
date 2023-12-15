@@ -13,7 +13,7 @@ Emacsには様々なメモやToDOを作るのに便利なOrgmodeなるモード�
 
 このOrgmode用パッケージに`org-web-tools`なるものがあり、これを使うと`org-web-tools-insert-link-for-url`コマンドでURLのリンクをタイトル付きで手軽にメモれる
 
-## 問題点：macosのEmacsだと動かん
+### 問題点： Curl de DNS Error
 Linux上では無問題に動作するこのパッケージだが、何故かmacOSだと`curl`がDNSエラーを吐いて死ぬ💀
 
 ## 解決に至るまで
