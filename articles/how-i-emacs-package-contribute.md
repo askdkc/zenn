@@ -3,7 +3,7 @@ title: "Emacs初心者が利用1ヶ月でパッケージにコントリビュー
 emoji: "🦄"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [emacs,lisp,elisp]
-published: false
+published: true
 ---
 # Emacs利用1ヶ月でパッケージにコントリビュートした話
 宗教として知られるVim、Emacsの宗派において、Emacs初心者が何故お手軽にパッケージの一つにコントリビュート出来たか？のお話
