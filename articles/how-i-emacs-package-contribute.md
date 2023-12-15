@@ -1,6 +1,6 @@
 ---
 title: "Emacs初心者が利用1ヶ月でパッケージにコントリビュートした話"
-emoji: "📘"
+emoji: "🦄"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [emacs,lisp,elisp]
 published: false
@@ -8,18 +8,18 @@ published: false
 # Emacs利用1ヶ月でパッケージにコントリビュートした話
 宗教として知られるVim、Emacsの宗派において、Emacs初心者が何故お手軽にパッケージの一つにコントリビュート出来たか？のお話
 
-## きっかけ：パッケージがmacOSで動かん
-Emacsには様々なメモやToDOを作るのに便利なOrgmodeなるモードがある
+## きっかけ：パッケージがmacOSで動かん🤦‍♂️
+Emacsには様々なメモやToDOを作るのに便利なOrgmodeなるモードがある🦄
 
 このOrgmode用パッケージに`org-web-tools`なるものがあり、これを使うと`org-web-tools-insert-link-for-url`コマンドでURLのリンクをタイトル付きで手軽にメモれる
 
 ## 問題点：macosのEmacsだと動かん
-Linux上では無問題に動作するこのパッケージだが、何故かmacOSだと`curl`がDNSエラーを吐いて死ぬ
+Linux上では無問題に動作するこのパッケージだが、何故かmacOSだと`curl`がDNSエラーを吐いて死ぬ💀
 
 ## 解決に至るまで
 
 ### ソースを見る
-問題があるならソースを見てみようということで、GitHubにソースを見に行く（むしろこれはダウンロードされてるパッケージのディレクトリの中身でも良い）
+問題があるならソースを見てみようということで、GitHubにソースを見に行く（むしろこれはダウンロードされてるパッケージのディレクトリの中身でも良い）🔍
 
 はい、それがこちら：
 ```elisp
@@ -30,7 +30,7 @@ If URL is not given, look for first URL in `kill-ring'."
   (insert (org-web-tools--org-link-for-url url)))
 ```
 
-`curl`は`org-web-tools--get-first-url`から呼ばれてるっぽいので、そっちを見に行く
+`curl`は`org-web-tools--get-first-url`から呼ばれてるっぽいので、そっちを見に行く🏃‍♀️💨
 
 はい、それがこちら：
 ```elisp
