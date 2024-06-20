@@ -130,18 +130,11 @@ https://herd.laravel.com/
 直し方を見つけたのでLaravel Valetの該当Issueに[解決方法を報告](https://github.com/laravel/valet/issues/1433#issuecomment-1653419658)してます
 
 ## Laravel Installer 5.8.0以上で毎回パスワード聞かれるのうざいという人
-valetコマンドがパスワード無しで`tld`チェック出来るようにしましょう
+valetコマンドがパスワード無しで`tld`チェックが出来るようにするには下記コマンドを実行します
 ```bash
-sudo visudo
+valet trust
 ```
-下記を追記
-```vim
-YOUR_USER_NAME ALL=(ALL) NOPASSWD:SETENV: {VALET_PATH}/valet tld -v
-```
-- `YOUR_USER_NAME`はmacOSへのログイン名
-- `{VALET_PATH}`は大抵`/home/ユーザ名/.composer/vendor/bin/valet`
-
-これでパスワードを聞かれなくなります
+これによりsudoerに`valet`コマンドが追加され、毎回パスワードを入力する処理でパスワード入力が省けます
 
 ## この記事が気に入ったらサポートしてね💕
 
