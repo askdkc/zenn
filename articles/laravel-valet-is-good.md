@@ -129,6 +129,13 @@ https://herd.laravel.com/
 
 直し方を見つけたのでLaravel Valetの該当Issueに[解決方法を報告](https://github.com/laravel/valet/issues/1433#issuecomment-1653419658)してます
 
+## Laravel Installer 5.8.0以上で毎回パスワード聞かれるのうざいという人
+valetコマンドがパスワード無しで`tld`チェックが出来るようにするには下記コマンドを実行します
+```bash
+valet trust
+```
+これによりsudoerに`valet`コマンドが追加され、毎回パスワードを入力する処理でパスワード入力が省けます
+
 ## この記事が気に入ったらサポートしてね💕
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X7X8O7KCU)
