@@ -92,6 +92,22 @@ query-replace
   対話的に置換する。
 ```
 
+## 14.3.1 この本で自作した小さな関数
+
+```text
+split-on-char
+  Common Lisp標準にはない。
+  学習用に作った、指定文字で文字列を分割する関数。
+
+ensure-list
+  Common Lisp標準にはない。
+  nil、list、vector、単独の値をlistとして扱いやすくするユーティリティ。
+
+parse-amount-field
+  金額文字列を整数へ変換する。
+  成功・失敗・元の値を区別して返すため、0円をエラー扱いしない。
+```
+
 ## 14.4 Common Lisp系
 
 ```text
