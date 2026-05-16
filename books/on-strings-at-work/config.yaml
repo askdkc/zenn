@@ -1,0 +1,22 @@
+title: "On Strings at Work"
+summary: "Emacsを利用した日々の仕事の業務改善DXストーリー"
+topics: ["emacs", "lisp"] # トピック（5つまで）
+published: true # falseだと下書き
+price: 0 # 有料の場合200〜5000
+toc_depth: 1
+chapters:
+  - chapter1 # チャプター1
+  - chapter2 # チャプター2
+  - chapter3 # チャプター3
+  - chapter4
+  - chapter5
+  - chapter6
+  - chapter7
+  - chapter8
+  - chapter9
+  - chapter10
+  - chapter11
+  - chapter12
+  - chapter13
+  - chapter14
+  - chapter15
