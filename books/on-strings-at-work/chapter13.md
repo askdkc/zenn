@@ -90,10 +90,13 @@ import_error
           customer-id name email amount registered-at)
   (let* ((clean-name (normalize-name-space name))
          (clean-email (string-trim " " email))
-         (clean-amount (maybe-parse-integer amount))
+         (amount-result (parse-amount-field amount))
+         (amount-ok-p (getf amount-result :ok))
+         (clean-amount (when amount-ok-p
+                         (getf amount-result :value)))
          (errors '()))
-    (unless clean-amount
-      (push "amount is not an integer" errors))
+    (unless amount-ok-p
+      (push (getf amount-result :error) errors))
     (list
      :source-file source-file
      :source-branch source-branch
@@ -109,6 +112,16 @@ import_error
      :registered-at registered-at
      :import-error (when errors
                      (format nil "~{~A~^; ~}" (nreverse errors)))))))
+```
+
+## 何を直したか
+
+以前のように、`maybe-parse-integer` が値そのものか `nil` だけを返す設計だと、`0` のような正しい値を誤ってエラー扱いする危険がある。  
+ここでは `parse-amount-field` が `:ok` と `:value` を分けて返すため、`0` も正しい値として扱える。
+
+```lisp
+(parse-amount-field "0")
+;; => (:OK T :VALUE 0 :RAW "0" :CLEANED "0")
 ```
 
 ## 出力例
@@ -213,4 +226,3 @@ staging table
 ```
 
 ---
-

@@ -90,23 +90,44 @@ id,name,amount,note
 
 ## 7.2 数値変換と失敗
 
+次に、金額欄を整数として扱いたい。
+
+ただし、ここでミナは一つ注意を入れた。
+
+「`nil` だけを返す関数にすると、『値がない』のか『変換に失敗した』のか分かりにくくなります。あと、金額が `0` の時に、うっかりエラー扱いする事故も起こりがちです。」
+
+高村が頷いた。
+
+「0円はあり得るけど、偽っぽく見えるから危ないわけか。」
+
+「そうです。だから、成功したかどうかと、値そのものを分けて返します。」
+
 ```lisp
-(defun maybe-parse-integer (s)
-  (handler-case
-      (parse-integer
-       (remove #\, (string-trim " " s)))
-    (error ()
-      nil)))
+(defun clean-integer-string (s)
+  (remove #\, (string-trim " " s)))
+
+(defun parse-integer-result (s)
+  (let ((cleaned (clean-integer-string s)))
+    (handler-case
+        (list :ok t
+              :value (parse-integer cleaned)
+              :raw s
+              :cleaned cleaned)
+      (error ()
+        (list :ok nil
+              :error "not an integer"
+              :raw s
+              :cleaned cleaned)))))
+
+(defun parse-amount-field (s)
+  (parse-integer-result s))
 ```
 
 ## 記号の読み方
 
 ```text
-string-trim
-  前後の空白を削る。
-
-remove #\,
-  カンマ文字を取り除く。
+clean-integer-string
+  前後の空白を削り、カンマを取り除く。
   例: "18,000" -> "18000"
 
 parse-integer
@@ -116,50 +137,49 @@ parse-integer
 handler-case
   エラーが起きたときに、処理全体を止めずに受け止める。
 
-(error () nil)
-  変換に失敗したら nil を返す。
+:ok
+  変換に成功したかどうか。
+
+:value
+  成功した時の整数値。
+
+:error
+  失敗した時の理由。
+
+:raw
+  元の文字列。
+
+:cleaned
+  変換前に掃除した文字列。
 ```
-
-## 何をしているか
-
-前後空白を削り、カンマを取り除き、整数へ変換する。  
-失敗したら `nil` を返す。
 
 ## 入力例
 
 ```lisp
-(maybe-parse-integer "18,000")
+(parse-amount-field "18,000")
 ```
 
 ## 出力例
 
 ```lisp
-18000
+(:OK T :VALUE 18000 :RAW "18,000" :CLEANED "18000")
 ```
+
+## 0円の例
+
+```lisp
+(parse-amount-field "0")
+```
+
+## 出力例
+
+```lisp
+(:OK T :VALUE 0 :RAW "0" :CLEANED "0")
+```
+
+`0` は正しい値であり、エラーではない。
 
 ## 失敗例
-
-```lisp
-(maybe-parse-integer "12,000円")
-;; => NIL
-```
-
-`円` が残っているため、整数として読めない。
-
-## リファクタリング
-
-`nil` だけだと理由が分からない。  
-エラー情報を返す。
-
-```lisp
-(defun parse-amount-field (s)
-  (let ((value (maybe-parse-integer s)))
-    (if value
-        (list :ok value)
-        (list :error "amount is not an integer" :raw s))))
-```
-
-## 入力例
 
 ```lisp
 (parse-amount-field "12,000円")
@@ -168,8 +188,18 @@ handler-case
 ## 出力例
 
 ```lisp
-(:ERROR "amount is not an integer" :RAW "12,000円")
+(:OK NIL
+ :ERROR "not an integer"
+ :RAW "12,000円"
+ :CLEANED "12000円")
 ```
+
+`円` が残っているため、整数として読めない。
+
+## リファクタリング
+
+`nil` だけで成功・失敗を表すのではなく、`:ok`、`:value`、`:error` を持つ結果にする。  
+これで、「値がない」と「変換に失敗した」と「0という正しい値」を区別できる。
 
 ## ミナのメモ
 
@@ -194,4 +224,3 @@ handler-case
 ```
 
 ---
-
