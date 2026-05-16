@@ -15,5 +15,7 @@ title: インターンのミナはEmacsで文字列地獄をほどく
 
 難しい話は、ミナの仕事を追いながら少しずつ出てきます。
 
+[こちらからEpub形式のファイルをダウンロード出来ます。また全文のMarkDownファイルもあります。](https://github.com/askdkc/on-strings-at-work)
+
 ---
 
