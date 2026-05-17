@@ -1,6 +1,6 @@
 ---
 title: "LISP：世界と人間とコンピュータを繋ぐ数式"
-emoji: "λ"
+emoji: "🪄"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["commonlisp","lisp","emacs"]
 published: true
