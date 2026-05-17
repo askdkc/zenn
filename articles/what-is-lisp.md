@@ -748,7 +748,7 @@ LISPはこの「形を作る」感覚が強い。
 
 DB行を記事にする。
 記事をAPIレスポンスにする。
-APIAPIレスポンスをJSONにする。
+APIレスポンスをJSONにする。
 
 ```lisp
 (db-row->article row)
