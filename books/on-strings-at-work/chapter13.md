@@ -21,7 +21,7 @@ sapporo_api_response.json
 
 「これは、いきなり本番テーブルへ入れてはいけません。」
 
-## 12.1 staging tableを作る
+## staging tableを作る
 
 ```sql
 CREATE TABLE import_customers_staging (
@@ -62,7 +62,7 @@ import_error
   変換や検査で問題があった理由。
 ```
 
-## 12.2 正規化してstaging rowを作る
+## 正規化してstaging rowを作る
 
 ミナは名前欄を見て、指が自然に止まった。
 
@@ -139,7 +139,7 @@ import_error
  :IMPORT-ERROR "not an integer")
 ```
 
-## 12.3 SQLで検査してから本テーブルへ
+## SQLで検査してから本テーブルへ
 
 ```sql
 SELECT *
@@ -203,7 +203,7 @@ A-005, 高橋 美咲,takahashi-new@example.com,19000,2024/04/07
 
 その場が静かになった。
 
-ミナは、文字列を整えただけではない。  
+ミナは、文字列を整えただけではない。
 どこまで機械に任せ、どこから人間に返すべきかを分けた。
 
 ## ミナのメモ
