@@ -10,7 +10,8 @@ id,name,amount,note
 003,鈴木 一郎,"18,000",カンマあり
 ```
 
-高村は前章で「CSV形式に近いから簡単でしょ」と言ったばかりだった。  
+「CSV形式に近いから簡単でしょ。」
+
 ミナはその言葉を思い出しながら、二行目と三行目を指した。
 
 「見た目は表っぽいです。でもCSVの実体は、区切り文字を持つ文字列です。しかも、引用符やカンマを含む値があります。そこを雑に扱うと壊れます。」
@@ -48,13 +49,24 @@ id,name,amount,note
 「なので、CSVは見た目より面倒です。」
 
 ```lisp
+;; これはCSV用の正しい分割関数ではありません。
+;; 単純splitが壊れることを見るための学習用関数です。
+(defun split-on-char (char string)
+  (let ((result '())
+        (start 0))
+    (loop for pos = (position char string :start start)
+          do (push (subseq string start pos) result)
+          while pos
+          do (setf start (1+ pos)))
+    (nreverse result)))
+
 (defun naive-split-comma (line)
   (split-on-char #\, line))
 ```
 
 ## 何をしているか
 
-カンマで単純に分割する。  
+カンマで単純に分割する。
 学習用の悪い例である。
 
 ## 入力例
@@ -85,8 +97,12 @@ id,name,amount,note
 
 ## リファクタリング
 
-実務ではCSVパーサーを使う。  
+実務ではCSVパーサーを使う。
 自作splitで頑張るのは、形式が本当に単純だと確認できる場合だけである。
+
+（ここではCSVパーサーの実装には踏み込みません。
+実務では cl-csv などのライブラリを使います。
+この章の `naive-split-comma` は、単純splitが壊れることを見るための悪い例です。）
 
 ## 7.2 数値変換と失敗
 

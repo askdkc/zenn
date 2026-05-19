@@ -116,7 +116,7 @@ import_error
 
 ## 何を直したか
 
-以前のように、`maybe-parse-integer` が値そのものか `nil` だけを返す設計だと、`0` のような正しい値を誤ってエラー扱いする危険がある。  
+以前のように、`maybe-parse-integer` が値そのものか `nil` だけを返す設計だと、`0` のような正しい値を誤ってエラー扱いする危険がある。
 ここでは `parse-amount-field` が `:ok` と `:value` を分けて返すため、`0` も正しい値として扱える。
 
 ```lisp
@@ -136,7 +136,7 @@ import_error
  :NORMALIZED-NAME "佐藤 花子"
  :NORMALIZED-EMAIL "sato@example.com"
  :AMOUNT NIL
- :IMPORT-ERROR "amount is not an integer")
+ :IMPORT-ERROR "not an integer")
 ```
 
 ## 12.3 SQLで検査してから本テーブルへ

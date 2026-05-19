@@ -96,6 +96,15 @@ vector
 
 「ここでは、JSON object のキーが文字列として入るパーサーを使っている前提です。たとえば `"customer"` というキーを文字列で取り出す想定です。」
 
+``` text
+この章では、JSON文字列はすでにCommon Lispの hash-table / vector に変換済みとします。
+実際のparseには com.inuoe.jzon などのJSONライブラリを使います。
+
+;; 例: com.inuoe.jzon を使う場合
+;; (ql:quickload :com.inuoe.jzon)
+;; (defparameter json (com.inuoe.jzon:parse json-string))
+```
+
 高村が聞いた。
 
 「ライブラリによって違うの？」

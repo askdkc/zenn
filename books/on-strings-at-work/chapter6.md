@@ -33,7 +33,7 @@ YAMADA TARO
 
 ## 何をしているか
 
-`string-trim` は、文字列の前後にある指定文字を削る。  
+`string-trim` は、文字列の前後にある指定文字を削る。
 ここでは半角スペースを削っている。
 
 ## 入力例
@@ -68,6 +68,8 @@ YAMADA TARO
          (if (char= ch from) to ch))
        string))
 
+;; `#\Ideographic_Space` は処理系依存です。SBCLなどUnicode文字名を扱える処理系を前提にしています。
+;; 最近はSBCLが標準的に使われるのでSBCL前提で進めます。
 (defun normalize-name-space (name)
   (string-trim " "
                (replace-char #\Ideographic_Space #\Space name)))
