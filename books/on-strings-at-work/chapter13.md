@@ -141,6 +141,26 @@ import_error
 
 ## SQLで検査してから本テーブルへ
 
+正規化した行をCSVとして書き出したら、まずstaging tableへ読み込む。
+
+```sql
+\copy import_customers_staging (
+    source_file,
+    source_branch,
+    raw_customer_id,
+    raw_name,
+    raw_email,
+    raw_amount,
+    raw_registered_at
+)
+FROM '/tmp/customers_staging.csv'
+WITH (FORMAT csv, HEADER true);
+```
+ここでは、アプリ側やLisp側で整えたCSVを、いったん検品用のstaging tableへ入れている。
+いきなり本テーブルへ入れない。
+
+読み込んだ後、問題があった行だけを見る。
+
 ```sql
 SELECT *
 FROM import_customers_staging
