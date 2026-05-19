@@ -103,7 +103,7 @@ EmacsにはVLFのような巨大ファイルを見るための道具もあるが
 2024-04-01T09:00:04 WARN request_id=R004 code=W201 message="retry"
 ```
 
-## 8.1 `occur`でエラー行を一覧する
+## `occur`でエラー行を一覧する
 
 ```elisp
 (occur "ERROR")
@@ -112,7 +112,7 @@ EmacsにはVLFのような巨大ファイルを見るための道具もあるが
 `occur` は、条件に合う行を一覧する。  
 ログの中から、さらに `ERROR` を含む行だけを見る。
 
-## 8.2 request_idで文脈を追う
+## request_idで文脈を追う
 
 エラー行だけでは原因が分からない。
 
