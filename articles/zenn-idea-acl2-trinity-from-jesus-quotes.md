@@ -2,7 +2,7 @@
 title: "ACL2で「矛盾しそうな主張」が本当に矛盾するか確かめる"
 emoji: "🧪"
 type: "idea"
-topics: ["acl2", "lisp", "commonlisp"]
+topics: ["acl2", "commonlisp", "logic", "theoremproving", "formalmethods"]
 published: true
 ---
 
