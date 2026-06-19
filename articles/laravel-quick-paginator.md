@@ -3,7 +3,7 @@ title: "Laravelのページネーションを瞬時に高速化"
 emoji: "😎"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [laravel, php]
-published: false
+published: true
 ---
 # Laravelのページネーションを一瞬で高速化
 
@@ -64,6 +64,12 @@ select * from users limit 50 offset 0;
 通常の `paginate()` の代わりに、このパッケージが提供するページネーション `quickPaginate()` を使うことで、一覧画面の表示速度改善が期待できます。
 
 特に、総件数の取得が重いケースで効果を発揮します。
+
+### 通常のページネーション (795.90ms)
+![](https://static.zenn.studio/user-upload/0dc47ee16b5d-20260619.png)
+
+### パッケージ利用時のQuickページネーション (264.69ms)
+![](https://static.zenn.studio/user-upload/5059dcf2a6be-20260619.png)
 
 ## インストール
 
@@ -173,26 +179,6 @@ class UserController extends Controller
 {{ $users->links() }}
 ```
 
+## まとめ
 
-## paginateとの使い分け
-
-すべての画面で置き換えれば良い、というわけではありません。
-
-通常の `paginate()` は、総件数や最終ページ番号が必要な場合に便利です。
-
-例えば、以下のような表示が必要な画面です。
-
-```text
-全 12,345 件中 1 - 50 件を表示
-```
-
-または、
-
-```text
-1 2 3 4 5 ... 247
-```
-
-のように最終ページまで含めたページ番号を正確に出したい場合です。
-
-一方で、一覧画面の表示速度を優先したい場合や、総件数が不要な場合は `quickPaginate()` が向いています。
-
+データ数が大量になってきた際に「ページネーション遅いなぁ、、、」となって来たら、是非ともご利用ください。
