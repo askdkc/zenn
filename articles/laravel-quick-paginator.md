@@ -65,6 +65,8 @@ select * from users limit 50 offset 0;
 
 特に、総件数の取得が重いケースで効果を発揮します。
 
+## ベンチマーク
+
 ### 通常のページネーション (795.90ms)
 ![](https://static.zenn.studio/user-upload/0dc47ee16b5d-20260619.png)
 
