@@ -3,10 +3,15 @@ title: "Claude CodeのハーネスでChatGPTモデルを使う"
 emoji: "🔧"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [ai, codex, claude]
-published: false
+published: true
 ---
 # Claude CodeのハーネスでChatGPTモデルを使う
 XでChatGPTをClaude Codeのハーネスで利用すると高性能になるとのポストを見かけて、それをmacOSで実現した時の手順を書いておきます。
+
+- 元ネタ
+![](https://static.zenn.studio/user-upload/1f96ed8bbbb2-20260725.png)
+
+https://x.com/OmedVibeCodes/status/2080348655039500703
 
 個人的にmacOSで動作するDockerが遅くて嫌いなので、Appleのオフィシャルなコンテナサービス `container` を使う手順にしてあります。
 
