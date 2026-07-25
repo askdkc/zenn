@@ -183,7 +183,7 @@ container image list
 
 ## DNS疎通を確認する
 
-Apple `container` の既定DNSを使わず、外部DNSを明示する。
+Apple `container` の既定DNSを使わず、外部DNSを明示する。（上手く通信できない時とかあるので）
 
 ``` zsh
 container run --rm \
@@ -213,7 +213,7 @@ container run --rm -it \
   --codex-login
 ```
 
-表示されたOpenAI OAuth URLをmacOSのブラウザで開く。
+表示されたOpenAI OAuth URLをmacOSのブラウザで開く。（API課金じゃなくてサブスクが使えてお安い）
 
 成功時:
 
@@ -232,7 +232,7 @@ find "$HOME/.local/share/cliproxy/auth" \
 
     ~/.local/share/cliproxy/auth
 
-このディレクトリをGitへ追加しない。
+※このディレクトリをGitへ追加しないようにしてね。
 
 ## CLIProxyAPIを常駐起動する
 
@@ -310,6 +310,7 @@ curl -fsS http://127.0.0.1:8317/v1/models \
     gpt-5.6-sol
     gpt-5.6-terra
 
+
 `gpt-5.6-sol` が表示されない場合、Claude Code側の設定へ進まない。
 
 ## Anthropic Messages互換APIを確認する
@@ -365,10 +366,10 @@ claude --model gpt-5.6-sol --effort xhigh
 
 初回起動時にはワークスペースの信頼確認が表示される。
 
-`~/Sites` 全体ではなく、対象プロジェクトのルートで起動する。
+`~/YOUR_PROJECTS` 全体ではなく、対象プロジェクトのルートで起動する。
 
 ``` zsh
-cd "$HOME/Sites/example-project"
+cd "$HOME/YOUR_PROJECTS/example-project"
 claude --model gpt-5.6-sol --effort xhigh
 ```
 
@@ -441,7 +442,7 @@ source "$HOME/.zshrc"
 利用方法:
 
 ``` zsh
-cd "$HOME/Sites/example-project"
+cd "$HOME/YOUR_PROJECTS/example-project"
 claude-sol
 ```
 
@@ -640,3 +641,4 @@ chmod 700 "$HOME/.local/share/cliproxy/auth"
 ```
 
 ※この構成はClaude Codeの公式な非Claudeモデル対応ではないため、Claude Code、CLIProxyAPI、またはCodex認証方式の更新で互換性が崩れる可能性がある。
+
