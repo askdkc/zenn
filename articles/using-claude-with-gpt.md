@@ -391,7 +391,7 @@ container logs -f cliproxy
 
 ``` zsh
 cat > "$HOME/.local/bin/claude-sol" <<'ZSH'
-##!/bin/zsh
+#!/bin/zsh
 set -euo pipefail
 
 TOKEN_FILE="$HOME/.config/cliproxy/token"
@@ -423,10 +423,9 @@ fi
   CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \
   CLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \
   CLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \
+  CLAUDE_CODE_NO_FLICKER=1 \
   ENABLE_TOOL_SEARCH=false \
-  claude --model gpt-5.6-sol 
-  "$@"
-
+  exec claude --model gpt-5.6-sol "$@"
 ZSH
 
 chmod 700 "$HOME/.local/bin/claude-sol"
