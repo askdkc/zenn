@@ -3,7 +3,7 @@ title: "チャットにプロジェクト管理を詰め込んだchatterrowを�
 emoji: "🍵"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['laravel','php','svelte','inertia','opensource']
-published: false
+published: true
 ---
 
 # チャットにプロジェクト管理を詰め込んだchatterrowを作ったよ
